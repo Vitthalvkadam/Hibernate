@@ -11,13 +11,13 @@ public class App {
 
 
         Laptop laptop = new Laptop();
-        laptop.setId(102);
-        laptop.setName("MSI");
+        laptop.setId(103);
+        laptop.setName("Acer Nitro");
 
         User user = new User();
-        user.setMarks(89);
-        user.setName("Aryan");
-        user.setRollNo(2);
+        user.setMarks(88);
+        user.setName("Yash");
+        user.setRollNo(3);
 
         Configuration config = new Configuration().configure().
             addAnnotatedClass(com.hibernateDemo.User.class).addAnnotatedClass(Laptop.class);

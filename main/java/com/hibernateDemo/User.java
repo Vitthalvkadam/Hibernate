@@ -1,9 +1,6 @@
 package com.hibernateDemo;
 
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
@@ -12,6 +9,8 @@ public class User {
     private  int rollNo;
     private  String name;
     private  float marks;
+    @OneToOne
+    private Laptop laptop;
 
     public int getRollNo() {
         return rollNo;
@@ -37,12 +36,21 @@ public class User {
         this.marks = marks;
     }
 
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "rollNo=" + rollNo +
                 ", name='" + name + '\'' +
                 ", marks=" + marks +
+                ", laptop=" + laptop +
                 '}';
     }
 }
