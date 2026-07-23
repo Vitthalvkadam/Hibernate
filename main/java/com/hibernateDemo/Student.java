@@ -8,6 +8,7 @@
 //@Entity
 //@Table(name = "student")
 //public class Student {
+
 //
 //    @Id
 //    private int aid;
