@@ -1,9 +1,8 @@
-package com.hibernateDemo;
+package com.hibernateDemo.OneToMany;
 
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
@@ -13,7 +12,7 @@ public class LaptopClass {
      private String name;
 
      @ManyToOne
-     private  StudentClass student;
+     private StudentClass student;
 
     public StudentClass getStudent() {
         return student;

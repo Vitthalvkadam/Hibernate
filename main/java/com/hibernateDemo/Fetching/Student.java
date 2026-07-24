@@ -1,21 +1,21 @@
-package com.hibernateDemo;
+package com.hibernateDemo.Fetching;
 
-
+import com.hibernateDemo.Fetching.Laptop;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @Entity
-public class Movie {
-
+@Table(name = "Alien")
+public class Student {
     @Id
     private  int id;
-    private String name;
+    private  String name;
 
-    @ManyToMany
-    private List<Actor> actors = new ArrayList<Actor>();
-
+    @OneToMany(mappedBy = "student" , fetch = FetchType.EAGER)
+    private Collection<Laptop> laptops = new ArrayList<Laptop>();
 
     public int getId() {
         return id;
@@ -33,21 +33,20 @@ public class Movie {
         this.name = name;
     }
 
-    public List<Actor> getActor() {
-        return actors;
+    public Collection<Laptop> getLaptop() {
+        return laptops;
     }
 
-    public void setActor(List<Actor> actor) {
-        this.actors = actor;
+    public void setLaptop(Collection<Laptop> laptop) {
+        this.laptops = laptop;
     }
-
 
     @Override
     public String toString() {
-        return "Movie{" +
+        return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", actor=" + actors +
+
                 '}';
     }
 }

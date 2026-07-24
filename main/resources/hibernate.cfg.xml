@@ -13,7 +13,7 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:postgresql://localhost:5432/ManyToMany
+            jdbc:postgresql://localhost:5432/Test
         </property>
 
         <property name="hibernate.connection.username">
@@ -29,7 +29,7 @@
         </property>
 
         <property name="hibernate.hbm2ddl.auto">
-            create
+            update
         </property>
 
 <!--        <property name="hibernate.show_sql">-->

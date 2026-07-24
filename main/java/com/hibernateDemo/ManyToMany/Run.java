@@ -1,4 +1,4 @@
-package com.hibernateDemo;
+package com.hibernateDemo.ManyToMany;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,7 +22,7 @@ public class Run {
         movie.getActor().add(actor);
 
         Configuration config = new Configuration().configure().
-                addAnnotatedClass(com.hibernateDemo.Actor.class).addAnnotatedClass(Movie.class);
+                addAnnotatedClass(Actor.class).addAnnotatedClass(Movie.class);
         config.configure("hibernate.cfg.xml");
 
         SessionFactory factory = config.buildSessionFactory();

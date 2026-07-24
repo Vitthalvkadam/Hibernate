@@ -1,4 +1,4 @@
-package com.hibernateDemo;
+package com.hibernateDemo.OneToOne;
 
 //import com.hibernateDemo.Student;
   import org.hibernate.Session;
@@ -6,22 +6,21 @@ package com.hibernateDemo;
   import org.hibernate.Transaction;
   import org.hibernate.cfg.Configuration;
 
-public class MainClass {
+public class App {
     public static  void main(String[] args){
 
 
-        LaptopClass laptop = new LaptopClass();
-        laptop.setId(106);
-        laptop.setName("HP victus");
+        Laptop laptop = new Laptop();
+        laptop.setId(103);
+        laptop.setName("Acer Nitro");
 
-        StudentClass user = new StudentClass();
-        user.setMarks(98);
-        user.setName("Dhiraj");
-        user.setRollNo(5);
-        user.getLaptop().add(laptop);
+        User user = new User();
+        user.setMarks(88);
+        user.setName("Yash");
+        user.setRollNo(3);
 
         Configuration config = new Configuration().configure().
-            addAnnotatedClass(com.hibernateDemo.StudentClass.class).addAnnotatedClass(LaptopClass.class);
+            addAnnotatedClass(User.class).addAnnotatedClass(Laptop.class);
             config.configure("hibernate.cfg.xml");
 
             SessionFactory factory = config.buildSessionFactory();

@@ -1,4 +1,4 @@
-package com.hibernateDemo;
+package com.hibernateDemo.ManyToMany;
 
 import jakarta.persistence.*;
 
