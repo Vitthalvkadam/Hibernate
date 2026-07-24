@@ -11,7 +11,7 @@
 //    private  float marks;
 //    @OneToOne
 //    private Laptop laptop;
-//
+
 //    public int getRollNo() {
 //        return rollNo;
 //    }
