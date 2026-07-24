@@ -10,11 +10,6 @@ public class Name
     private  String lNmae;
     private  String mName;
 
-
-
-
-
-
     public String getfNmae() {
         return fNmae;
     }
@@ -22,7 +17,6 @@ public class Name
     public void setfNmae(String fNmae) {
         this.fNmae = fNmae;
     }
-
 
 
     public String getmName() {

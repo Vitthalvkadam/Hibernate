@@ -13,8 +13,6 @@
 
         public static void main(String[] args) {
 
-
-
             Name name = new Name();
             name.setfNmae("Vitthal");
             name.setmName("Vinayak");

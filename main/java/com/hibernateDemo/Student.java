@@ -9,7 +9,6 @@ import jakarta.persistence.Table;
 @Table(name = "student")
 public class Student {
 
-
     @Id
     private int aid;
     @Embedded
