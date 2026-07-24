@@ -11,6 +11,7 @@ public class LaptopClass {
     private  int id;
      private String name;
 
+//     many to one
      @ManyToOne
      private StudentClass student;
 

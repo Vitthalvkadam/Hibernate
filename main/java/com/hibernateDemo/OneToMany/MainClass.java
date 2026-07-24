@@ -9,11 +9,12 @@ package com.hibernateDemo.OneToMany;
 public class MainClass {
     public static  void main(String[] args){
 
-
+//      to set laptop details
         LaptopClass laptop = new LaptopClass();
         laptop.setId(106);
         laptop.setName("HP victus");
 
+//       to set student details
         StudentClass user = new StudentClass();
         user.setMarks(98);
         user.setName("Dhiraj");
