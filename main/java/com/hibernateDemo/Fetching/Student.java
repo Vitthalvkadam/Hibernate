@@ -14,6 +14,7 @@ public class Student {
     private  int id;
     private  String name;
 
+//    make fetch type eager to fetch related entity
     @OneToMany(mappedBy = "student" , fetch = FetchType.EAGER)
     private Collection<Laptop> laptops = new ArrayList<Laptop>();
 
@@ -46,7 +47,6 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-
                 '}';
     }
 }

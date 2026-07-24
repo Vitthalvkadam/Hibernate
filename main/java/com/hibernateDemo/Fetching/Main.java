@@ -47,6 +47,8 @@ public class Main {
 
 //        Lazy fetchnig by default
 //        System.out.println(student.getName());
+
+//        to fetch manually you can write ecode like this
 //        Collection<Laptop> laptops = student.getLaptop();
 //
 //        for(Laptop l : laptops){
