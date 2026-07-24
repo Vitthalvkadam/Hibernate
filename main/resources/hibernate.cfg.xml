@@ -13,7 +13,7 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:postgresql://localhost:5432/Mapping_Relations
+            jdbc:postgresql://localhost:5432/OneToMany
         </property>
 
         <property name="hibernate.connection.username">
