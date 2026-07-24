@@ -12,6 +12,7 @@ public class Actor {
     private  String name;
     private  double fee;
 
+//    many to many
     @ManyToMany(mappedBy = "actors")
     private List<Movie> movies = new ArrayList<Movie>();
 

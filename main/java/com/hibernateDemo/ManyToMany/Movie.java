@@ -13,6 +13,7 @@ public class Movie {
     private  int id;
     private String name;
 
+//    here also many to many
     @ManyToMany
     private List<Actor> actors = new ArrayList<Actor>();
 

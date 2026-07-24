@@ -8,11 +8,12 @@ import org.hibernate.cfg.Configuration;
 public class Run {
     public static void main(String[] args){
 
-
+//      for Movie
         Movie movie = new Movie();
         movie.setId(106);
         movie.setName("Bahubali");
 
+//        for actor
         Actor actor = new Actor();
         actor.setId(1);
         actor.setFee(9800000);
@@ -26,8 +27,6 @@ public class Run {
         config.configure("hibernate.cfg.xml");
 
         SessionFactory factory = config.buildSessionFactory();
-//            ServiceRegistry registry = new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistery();
-
         Session session = factory.openSession();
 
         Transaction transaction = session.beginTransaction();
