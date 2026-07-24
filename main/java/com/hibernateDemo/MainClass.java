@@ -11,13 +11,13 @@ public class MainClass {
 
 
         LaptopClass laptop = new LaptopClass();
-        laptop.setId(104);
-        laptop.setName("Acer Nitro");
+        laptop.setId(106);
+        laptop.setName("HP victus");
 
         StudentClass user = new StudentClass();
-        user.setMarks(84);
-        user.setName("avi");
-        user.setRollNo(4);
+        user.setMarks(98);
+        user.setName("Dhiraj");
+        user.setRollNo(5);
         user.getLaptop().add(laptop);
 
         Configuration config = new Configuration().configure().

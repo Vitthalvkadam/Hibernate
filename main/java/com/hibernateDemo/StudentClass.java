@@ -12,7 +12,7 @@ public class StudentClass {
     private  int rollNo;
     private  String name;
     private  float marks;
-    @OneToMany
+    @OneToMany(mappedBy = "student")
     private List<LaptopClass> laptop = new ArrayList<LaptopClass>();
 
     public int getRollNo() {
