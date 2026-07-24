@@ -9,6 +9,8 @@ public class User {
     private  int rollNo;
     private  String name;
     private  float marks;
+
+//    one to one relation
     @OneToOne
     private Laptop laptop;
 

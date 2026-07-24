@@ -24,7 +24,7 @@ public class App {
             config.configure("hibernate.cfg.xml");
 
             SessionFactory factory = config.buildSessionFactory();
-//            ServiceRegistry registry = new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistery();
+
 
             Session session = factory.openSession();
 
